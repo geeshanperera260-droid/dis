@@ -31,11 +31,7 @@ pipeline {
         echo "Deploy the application to a testing environment specified by the environment variable"
         echo "Testing env: ${env.TESTING_ENVIRONMENT}"
       }
- }
-    stage('Code Quality Check') {
-      steps {
-        echo "Check the quality of the code"
-      }
+
     }
     stage('Approval') {
       steps {
@@ -56,5 +52,6 @@ pipeline {
   }
 
 }  
+
 
 
