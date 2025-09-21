@@ -37,12 +37,7 @@ pipeline {
         echo "Waiting 10 seconds to simulate manual approval..."
         sleep time: 10, unit: 'SECONDS'
       }
-    }
-    stage('complete') {
-      steps {
-        echo "completed"
-        echo "Testing env: ${env.TESTING_ENVIRONMENT}"
-      }
+   
     }
     stage('Deploy to Production') {
       steps {
@@ -50,4 +45,5 @@ pipeline {
       }
     }
   }
+
 }    this is my git hub jenskin file code 
